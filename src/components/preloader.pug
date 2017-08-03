@@ -1,0 +1,6 @@
+- var preloaders = [{class:"preloader_1", object:"dist/images/loader/1.svg"}, {class:"preloader_2", object:"dist/images/loader/2.svg"}, {class:"preloader_3", object:"dist/images/loader/3.svg"}, {class:"preloader_4", object:"dist/images/loader/4.svg"}];
+
+.preloader
+  .preloader__block
+    each preloader in preloaders
+      object(type="image/svg+xml", data= preloader.object, class= preloader.class)
